@@ -1,0 +1,28 @@
+<mat-form-field>
+
+<span matPrefix>
+<button mat-icon-button color="accent" aria-label="Example icon button with a plus one icon">
+  <mat-icon>add</mat-icon>
+</button>
+</span>
+
+<input
+  matInput
+  [id]="id"
+  [type]="input"
+  [readonly]="to.readonly"
+  [required]="to.required"
+  [errorStateMatcher]="errorStateMatcher"
+  [formControl]="formControl"
+  [formlyAttributes]="field"
+  [tabindex]="to.tabindex"
+  [placeholder]="to.placeholder"
+/>
+
+<span matSuffix>
+<button mat-icon-button color="accent" aria-label="Example icon button with a plus one icon">
+  <mat-icon>remove</mat-icon>
+</button>
+</span>
+
+</mat-form-field>
